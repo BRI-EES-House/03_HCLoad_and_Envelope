@@ -9,5 +9,5 @@
 https://github.com/BRI-EES-House/03-03-HCLoad-UValue/tree/master/Basis/Ug_Value_Simple_Evaluation_for_Windows
 
 ### 通気層のU値・η値の補正方法(作業中)
-外壁および屋根に通気層がある場合のU値およびη値の補正方法の根拠をまとめたもの。
+外壁および屋根に通気層がある場合のU値およびη値の補正方法の根拠をまとめたもの。  
 https://github.com/BRI-EES-House/03-03-HCLoad-UValue/tree/master/Basis/Ventilation_Layer
