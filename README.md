@@ -1,6 +1,7 @@
 # 第3章 暖冷房負荷と外皮性能 第3節 熱貫流率及び線熱貫流率
 
-## ロジックトレース
+## 計算方法
+https://github.com/BRI-EES-House/Logic-EES-WEB/tree/master/_03_HCLoad_and_Envelope
 
 ## 根拠
 
