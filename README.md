@@ -26,4 +26,6 @@ https://github.com/BRI-EES-House/03_HCLoad_and_Envelope/tree/master/Basis/Solar_
 https://github.com/BRI-EES-House/03_HCLoad_and_Envelope/tree/master/Basis/ComparisonForOutsideAirIntakeVentSysThroughUnderfloorSpace
 
 ### 窓のUg値の計算およびラベリング
+JIS R3107 に基づくガラスの熱貫流率(Ug値)の計算方法をまとめた。
+また、JIS R3107 の計算をベースにした省エネ基準におけるガラスのラベリング制度の前提と計算値をまとめた。
 https://github.com/BRI-EES-House/03_HCLoad_and_Envelope/tree/master/Basis/Ug_value_labeling
