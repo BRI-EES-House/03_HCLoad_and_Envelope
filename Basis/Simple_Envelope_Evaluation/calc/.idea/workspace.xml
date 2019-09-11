@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94ae3f58-4ddf-4bb1-8454-a57d1ebd5c53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DirectionCoefficient.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EnvelopePerformanceSimpleUnitTest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fValueUnitTest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../calc_indices/.idea/calc_indices.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../calc_indices/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../calc_indices/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../calc_indices/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../calc_indices/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../calc_indices/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../calc_indices/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Area_and_Length_for_Simple_Evaluation_for_Detached_House_Envelope.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../Area_and_Length_for_Simple_Evaluation_for_Detached_House_Envelope.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DirectionCoefficient.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../DirectionCoefficient.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FirstDetuchedHouseEnvelopePerformanceSimpleEvaluation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../FirstDetuchedHouseEnvelopePerformanceSimpleEvaluation.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model_house.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,13 +13,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="384" selection-start-line="384" selection-end-line="384" />
+            <state relative-caret-position="153">
+              <caret line="116" column="14" lean-forward="true" selection-start-line="116" selection-start-column="14" selection-end-line="116" selection-end-column="14" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/model_house.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15980">
+              <caret line="940" lean-forward="true" selection-start-line="940" selection-end-line="940" />
+              <folding>
+                <element signature="e#0#53#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,6 +66,7 @@
         <option value="$PROJECT_DIR$/fValueUnitTest.py" />
         <option value="$PROJECT_DIR$/EnvelopePerformanceSimpleUnitTest.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/model_house.py" />
       </list>
     </option>
   </component>
@@ -108,7 +110,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in EnvelopePerformanceSimpleUnitTest.py">
+  <component name="RunManager" selected="Python tests.Unittests in test_model_house.py">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="calc" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -158,8 +160,23 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests in test_model_house.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="calc" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_model_house.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in test_model_house.py" />
         <item itemvalue="Python tests.Unittests in EnvelopePerformanceSimpleUnitTest.py" />
         <item itemvalue="Python tests.Unittests in fValueUnitTest.py" />
         <item itemvalue="Python.main" />
@@ -251,10 +268,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="384" selection-start-line="384" selection-end-line="384" />
+        <state relative-caret-position="153">
+          <caret line="116" column="14" lean-forward="true" selection-start-line="116" selection-start-column="14" selection-end-line="116" selection-end-column="14" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model_house.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15980">
+          <caret line="940" lean-forward="true" selection-start-line="940" selection-end-line="940" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
           </folding>
         </state>
       </provider>
