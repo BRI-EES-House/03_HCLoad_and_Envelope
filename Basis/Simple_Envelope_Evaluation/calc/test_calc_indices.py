@@ -3,7 +3,7 @@ import unittest
 import nbimporter
 import csv
 
-from main import calc_indices as SEPS
+from calc_indices import calc_indices as SEPS
 
 
 class TestSEPS(unittest.TestCase):

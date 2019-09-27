@@ -1,7 +1,7 @@
 # f value unit test
 import unittest
 
-from fValue import f1f2Value
+from f_value import f1f2Value
 
 
 class TestFValue(unittest.TestCase):

@@ -8,7 +8,7 @@ class f1f2Value:
 
     # obtain the list from csv data
     def __init__(self):
-        self.f_list = pd.read_csv('fValue.csv', skiprows = 1)
+        self.f_list = pd.read_csv('f_value.csv', skiprows = 1)
         self.f_list['ガラス仕様の区分'] = self.f_list['ガラス仕様の区分'].fillna(method='ffill')
         self.f_list['期間']             = self.f_list['期間']            .fillna(method='ffill')
         self.f_list.columns=['Glass Spec',

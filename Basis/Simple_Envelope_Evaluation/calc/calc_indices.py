@@ -1,7 +1,7 @@
 from typing import Union, List, Dict
 from decimal import Decimal
 
-from fValue import f1f2Value
+from f_value import f1f2Value
 from DirectionCoefficient import get_nu_H as DC_get_nu_H
 from DirectionCoefficient import get_nu_C as DC_get_nu_C
 
@@ -10,12 +10,28 @@ def get_Q_dash(U_A, r_env):
     return U_A * r_env
 
 
-def get_mu_H(eta_A_H, r_env):
-    return eta_A_H * r_env / 100
+def get_mu_h(eta_a_h: float, r_env: float) -> float:
+    """
+    Args:
+        eta_a_h: 暖房期の平均日射熱取得率, %
+        r_env: 床面積に対する外皮表面積の割合
+    Returns:
+        暖房期μ値, (W/m2)/(W/m2)
+    """
+
+    return eta_a_h * r_env / 100
 
 
-def get_mu_C(eta_A_C, r_env):
-    return eta_A_C * r_env / 100
+def get_mu_c(eta_a_c: float, r_env: float) -> float:
+    """
+    Args:
+        eta_a_c: 冷房期の平均日射熱取得率, %
+        r_env: 床面積に対する外皮表面積の割合
+    Returns:
+        冷房期μ値, (W/m2)/(W/m2)
+    """
+
+    return eta_a_c * r_env / 100
 
 
 def get_r_env(A_env, A_A):
@@ -112,6 +128,7 @@ def get_simple_Orientation_value_from_Direction(direction):
 
 
 def getSimpleAreaAndLength(houseType, bathInsType):
+
     ht = {'floor_ins': 'f', 'base_ins': 'b'}[houseType]
     if ht == 'f':
         bit = {'bath_floor_ins': 'bf', 'bath_base_ins': 'bb', 'bath_2nd_floor': 'bf'}[bathInsType]
@@ -396,8 +413,8 @@ def calc_indices(spec: Dict) -> Dict:
 
     # --- heating season ---
     if spec['region'] == 'region8':
-        eta_A_H = 'ND'
-        mu_H = 'ND'
+        eta_a_h = 'ND'
+        mu_h = 'ND'
     else:
         # eta for windows
         etaH['window'] = get_simple_eta_H_window(region=spec['region'],
@@ -407,9 +424,9 @@ def calc_indices(spec: Dict) -> Dict:
         nuH = DC_get_nu_H(spec['region'])
         nuTopH, nuHorizontalH = (nuH['top'], get_simple_Orientation_value_from_Direction(nuH))
         # eta_A
-        eta_A_H = get_simple_eta_A_H(A, nuTopH, nuHorizontalH, etaH)
-        # mu
-        mu_H = get_mu_H(float(eta_A_H), r_env)
+        eta_a_h = get_simple_eta_A_H(A, nuTopH, nuHorizontalH, etaH)
+        # 暖房期μ値
+        mu_h = get_mu_h(eta_a_h, r_env)
 
     # --- cooling season ---
     # eta for windows
@@ -419,18 +436,20 @@ def calc_indices(spec: Dict) -> Dict:
     # nu
     nuC = DC_get_nu_C(spec['region'])
     nuTopC, nuHorizontalC = (nuC['top'], get_simple_Orientation_value_from_Direction(nuC))
+
     # eta_A
-    eta_A_C = get_simple_eta_A_C(A, nuTopC, nuHorizontalC, etaC)
-    # mu
-    mu_C = get_mu_C(float(eta_A_C), r_env)
+    eta_a_c = get_simple_eta_A_C(A, nuTopC, nuHorizontalC, etaC)
+
+    # 冷房期μ値
+    mu_c = get_mu_c(eta_a_c, r_env)
 
     return {
         'UA': U_A,
-        'etaAH': eta_A_H,
-        'etaAC': eta_A_C,
+        'etaAH': eta_a_h,
+        'etaAC': eta_a_c,
         'Qdash': Q_dash,
-        'muH': mu_H,
-        'muC': mu_C
+        'muH': mu_h,
+        'muC': mu_c
     }
 
 
