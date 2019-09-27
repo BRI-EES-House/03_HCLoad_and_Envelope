@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94ae3f58-4ddf-4bb1-8454-a57d1ebd5c53" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/calc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/calc.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnvelopePerformanceSimpleUnitTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_calc_indices.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fValue.csv" beforeDir="false" afterPath="$PROJECT_DIR$/f_value.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fValue.py" beforeDir="false" afterPath="$PROJECT_DIR$/f_value.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fValueUnitTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_f_value.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/calc_indices.py" afterDir="false" />
-    </list>
+    <list default="true" id="94ae3f58-4ddf-4bb1-8454-a57d1ebd5c53" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,23 +11,12 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/model_house.py">
+        <entry file="file://$PROJECT_DIR$/test_calc_indices.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="751" selection-start-line="683" selection-end-line="751" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_model_house.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9146">
-              <caret line="561" selection-start-line="561" selection-end-line="561" />
+            <state relative-caret-position="375">
+              <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
               <folding>
-                <element signature="e#0#15#0" expanded="true" />
-                <element signature="e#125#904#0" />
-                <element signature="e#939#1547#0" />
+                <element signature="e#40#55#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -217,12 +198,14 @@
     <history-entry file="Unittests_in_EnvelopePerformanceSimpleUnitTest_py - 2019.09.12 at 01h 14m 44s.xml">
       <configuration name="Unittests in EnvelopePerformanceSimpleUnitTest.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_test_calc_indices_py - 2019.09.27 at 11h 40m 10s.xml">
+      <configuration name="Unittests in test_calc_indices.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1293" height="672" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24980111" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24980111" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -277,17 +260,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_calc_indices.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#40#55#0" expanded="true" />
-            <element signature="e#203#4516#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/calc_indices.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
@@ -300,8 +272,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model_house.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="751" selection-start-line="683" selection-end-line="751" />
+        <state relative-caret-position="163">
+          <caret line="666" column="4" selection-start-line="666" selection-start-column="4" selection-end-line="666" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -313,6 +285,16 @@
             <element signature="e#0#15#0" expanded="true" />
             <element signature="e#125#904#0" />
             <element signature="e#939#1547#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_calc_indices.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+          <folding>
+            <element signature="e#40#55#0" expanded="true" />
           </folding>
         </state>
       </provider>
