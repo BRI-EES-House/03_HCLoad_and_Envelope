@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94ae3f58-4ddf-4bb1-8454-a57d1ebd5c53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/model_house.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/calc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/calc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EnvelopePerformanceSimpleUnitTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_calc_indices.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fValue.csv" beforeDir="false" afterPath="$PROJECT_DIR$/f_value.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fValue.py" beforeDir="false" afterPath="$PROJECT_DIR$/f_value.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fValueUnitTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_f_value.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/calc_indices.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,35 +18,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="116" column="14" lean-forward="true" selection-start-line="116" selection-start-column="14" selection-end-line="116" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/model_house.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15980">
-              <caret line="940" lean-forward="true" selection-start-line="940" selection-end-line="940" />
-              <folding>
-                <element signature="e#0#53#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="119">
+              <caret line="751" selection-start-line="683" selection-end-line="751" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EnvelopePerformanceSimpleUnitTest.py">
+        <entry file="file://$PROJECT_DIR$/test_model_house.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+            <state relative-caret-position="9146">
+              <caret line="561" selection-start-line="561" selection-end-line="561" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#125#904#0" />
+                <element signature="e#939#1547#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -55,6 +50,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>eta_A_C</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
@@ -65,8 +65,10 @@
         <option value="$PROJECT_DIR$/DirectionCoefficient.py" />
         <option value="$PROJECT_DIR$/fValueUnitTest.py" />
         <option value="$PROJECT_DIR$/EnvelopePerformanceSimpleUnitTest.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/model_house.py" />
+        <option value="$PROJECT_DIR$/test_model_house.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/calc_indices.py" />
       </list>
     </option>
   </component>
@@ -96,7 +98,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -110,7 +112,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test_model_house.py">
+  <component name="RunManager" selected="Python tests.Unittests in test_calc_indices.py">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="calc" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -123,7 +125,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\miura\Dropbox\BRI-EES-House\03_HCLoad_and_Envelope\Basis\Simple_Envelope_Evaluation\calc\calc_indices.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -132,7 +134,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in EnvelopePerformanceSimpleUnitTest.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in test_calc_indices.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="calc" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -142,11 +144,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/EnvelopePerformanceSimpleUnitTest.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_calc_indices.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in fValueUnitTest.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in test_f_value.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="calc" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -156,7 +158,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/fValueUnitTest.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_f_value.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -176,9 +178,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in test_calc_indices.py" />
         <item itemvalue="Python tests.Unittests in test_model_house.py" />
-        <item itemvalue="Python tests.Unittests in EnvelopePerformanceSimpleUnitTest.py" />
-        <item itemvalue="Python tests.Unittests in fValueUnitTest.py" />
+        <item itemvalue="Python tests.Unittests in test_f_value.py" />
         <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
@@ -206,12 +208,21 @@
     <history-entry file="Unittests_in_EnvelopePerformanceSimpleUnitTest_py - 2019.09.11 at 18h 02m 20s.xml">
       <configuration name="Unittests in EnvelopePerformanceSimpleUnitTest.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_test_model_house_py - 2019.09.11 at 18h 27m 31s.xml">
+      <configuration name="Unittests in test_model_house.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_EnvelopePerformanceSimpleUnitTest_py - 2019.09.12 at 00h 45m 59s.xml">
+      <configuration name="Unittests in EnvelopePerformanceSimpleUnitTest.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_EnvelopePerformanceSimpleUnitTest_py - 2019.09.12 at 01h 14m 44s.xml">
+      <configuration name="Unittests in EnvelopePerformanceSimpleUnitTest.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1293" height="672" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24980111" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24980111" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -238,38 +249,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fValueUnitTest.py">
+    <entry file="file://$PROJECT_DIR$/test_f_value.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1515">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fValue.py">
+    <entry file="file://$PROJECT_DIR$/f_value.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="18" selection-start-column="18" selection-end-column="18" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="604" selection-start-line="604" selection-end-line="604" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DirectionCoefficient.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="37" column="113" selection-start-line="37" selection-start-column="113" selection-end-line="37" selection-end-column="113" />
+        <state relative-caret-position="171">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EnvelopePerformanceSimpleUnitTest.py">
+    <entry file="file://$PROJECT_DIR$/test_calc_indices.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#40#55#0" expanded="true" />
+            <element signature="e#203#4516#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/calc_indices.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="116" column="14" lean-forward="true" selection-start-line="116" selection-start-column="14" selection-end-line="116" selection-end-column="14" />
+        <state relative-caret-position="163">
+          <caret line="437" column="41" selection-start-line="437" selection-start-column="41" selection-end-line="437" selection-end-column="41" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
@@ -278,10 +300,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model_house.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15980">
-          <caret line="940" lean-forward="true" selection-start-line="940" selection-end-line="940" />
+        <state relative-caret-position="119">
+          <caret line="751" selection-start-line="683" selection-end-line="751" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_model_house.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9146">
+          <caret line="561" selection-start-line="561" selection-end-line="561" />
           <folding>
-            <element signature="e#0#53#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#125#904#0" />
+            <element signature="e#939#1547#0" />
           </folding>
         </state>
       </provider>
