@@ -665,13 +665,14 @@ def get_a_evp_ef_other(
 
 
 def calc_area(
-        house_type: str, a_f_total: float, r_open: float,
+        house_type: str, a_f_total: float, r_open: float, aspect_ratio: float = None,
         floor_ins_type: str = None, bath_ins_type: str = None, a_env_input: float = None) -> Dict:
     """
     Args:
         house_type: 住戸の種類 (= 'detached', 'attached')
         a_f_total: 床面積の合計, m2
         r_open: 開口部の面積比率
+        aspect_ratio: アスペクト比
         floor_ins_type: 床の断熱の種類 (= 'floor', 'base')
         bath_ins_type: 浴室の床の断熱の種類 (= 'floor', 'base', 'not_exist')
         a_env_input: 外皮面積の合計, m2
@@ -847,13 +848,13 @@ def calc_area(
     # 窓の面積の合計, m2
     a_evp_window_total = get_a_evp_window_total(a_evp_door_back_entrance, a_evp_door_entrance, a_evp_open_total)
 
-    # 窓の面積の合計, m2
+    # 窓の面積の合計（4方位）, m2
     a_evp_window = get_a_evp_window(a_evp_window_total, r_window)
 
-    # ドアの面積, m2
+    # ドアの面積（4方位）, m2
     a_evp_door = get_a_evp_door(a_evp_door_back_entrance, a_evp_door_entrance, house_type)
 
-    # 壁の面積, m2
+    # 壁の面積（4方位）, m2
     a_evp_wall = get_a_evp_wall(a_evp_door, a_evp_srf, a_evp_window)
 
     return dict(
