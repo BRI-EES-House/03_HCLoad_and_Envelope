@@ -1,6 +1,9 @@
+from nu_value import get_nu_c
+
 
 def calc_designed_indices(
         model_house: dict,
+        region: int,
         upper_u: float,
         wall_u: float,
         lower_u: float,
@@ -14,6 +17,7 @@ def calc_designed_indices(
     """
     Args:
         model_house: モデルハウス（面積等）の辞書
+        region: 地域の区分
         upper_u: 上部のU値, W/m2K
         wall_u: 外壁のU値, W/m2K
         lower_u: 下部のU値, W/m2K
@@ -63,13 +67,9 @@ def calc_designed_indices(
         + sum(a_evp_door) * window_u\
         + sum(a_evp_wall) * wall_u
 
+    m_c = a_evp_roof * upper_u * 0.034 * get_nu_c(region=region, direction='top')
+
     u_a = q / a_evp_total
 
     return u_a
 
-
-
-
-if __name__ == '__main__':
-
-    calc_designed_indices()
