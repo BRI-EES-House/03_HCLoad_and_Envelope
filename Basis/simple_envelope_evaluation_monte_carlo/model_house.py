@@ -665,7 +665,7 @@ def get_a_evp_ef_other(
 
 
 def calc_area(
-        house_type: str, a_f_total: float, r_open: float, aspect_ratio: float = None,
+        house_type: str, a_f_total: float, r_open: float, story: int = None, aspect_ratio: float = None,
         floor_ins_type: str = None, bath_ins_type: str = None, a_env_input: float = None) -> Dict:
     """
     Args:
