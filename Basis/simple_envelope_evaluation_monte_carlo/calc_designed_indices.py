@@ -1,6 +1,6 @@
 from typing import List, Tuple
 
-from nu_value import get_nu_c
+from nu_value import get_nu_c, get_nu_h
 from f_value import get_f, Sunshade, get_f_value
 
 
@@ -32,7 +32,8 @@ def calc_designed_indices(
         window_attached_u: float,
         window_eta: float,
         window_attached_eta: float,
-        l_value: float
+        l_value_h: float,
+        l_value_c: float
 ):
     """
     Args:
@@ -48,7 +49,8 @@ def calc_designed_indices(
         window_attached_u: 窓（障子）のU値, U値, W/m2K
         window_eta: 窓のη値
         window_attached_eta: 窓（障子）のη値
-        l_value: 日除けのl_value
+        l_value_h: 暖房期の日除けのl_value
+        l_value_c: 冷房期の日除けのl_value
     Returns:
 
     """
@@ -89,18 +91,20 @@ def calc_designed_indices(
         + sum(a_evp_door) * window_u\
         + sum(a_evp_wall) * wall_u
 
+    u_a = q / a_evp_total
+
     d0, d90, d180, d270 = get_direction(main_direction)
 
-    f0 = get_f_value(glass_type='Type1', season='Cooling', region=region, direction=d0, l_value=l_value)
-    f90 = get_f_value(glass_type='Type1', season='Cooling', region=region, direction=d90, l_value=l_value)
-    f180 = get_f_value(glass_type='Type1', season='Cooling', region=region, direction=d180, l_value=l_value)
-    f270 = get_f_value(glass_type='Type1', season='Cooling', region=region, direction=d270, l_value=l_value)
+    f_c_0 = get_f_value(glass_type='Type1', season='Cooling', region=region, direction=d0, l_value=l_value_c)
+    f_c_90 = get_f_value(glass_type='Type1', season='Cooling', region=region, direction=d90, l_value=l_value_c)
+    f_c_180 = get_f_value(glass_type='Type1', season='Cooling', region=region, direction=d180, l_value=l_value_c)
+    f_c_270 = get_f_value(glass_type='Type1', season='Cooling', region=region, direction=d270, l_value=l_value_c)
 
     m_c = a_evp_roof * upper_u * 0.034 * get_nu_c(region=region, direction='top')\
-        + a_evp_window[0] * window_eta * f0 * get_nu_c(region=region, direction=d0)\
-        + a_evp_window[1] * window_attached_eta * f90 * get_nu_c(region=region, direction=d90)\
-        + a_evp_window[2] * window_eta * f180 * get_nu_c(region=region, direction=d180)\
-        + a_evp_window[3] * window_eta * f270 * get_nu_c(region=region, direction=d270)\
+        + a_evp_window[0] * window_eta * f_c_0 * get_nu_c(region=region, direction=d0)\
+        + a_evp_window[1] * window_attached_eta * f_c_90 * get_nu_c(region=region, direction=d90)\
+        + a_evp_window[2] * window_eta * f_c_180 * get_nu_c(region=region, direction=d180)\
+        + a_evp_window[3] * window_eta * f_c_270 * get_nu_c(region=region, direction=d270)\
         + a_evp_door[0] * window_u * 0.034 * get_nu_c(region=region, direction=d0)\
         + a_evp_door[1] * window_u * 0.034 * get_nu_c(region=region, direction=d90)\
         + a_evp_door[2] * window_u * 0.034 * get_nu_c(region=region, direction=d180)\
@@ -110,11 +114,36 @@ def calc_designed_indices(
         + a_evp_wall[2] * wall_u * 0.034 * get_nu_c(region=region, direction=d180)\
         + a_evp_wall[3] * wall_u * 0.034 * get_nu_c(region=region, direction=d270)
 
-    u_a = q / a_evp_total
-
     eta_a_c = m_c / a_evp_total
 
-    return u_a, eta_a_c
+    if region != 8:
+
+        f_h_0 = get_f_value(glass_type='Type7', season='Heating', region=region, direction=d0, l_value=l_value_h)
+        f_h_90 = get_f_value(glass_type='Type7', season='Heating', region=region, direction=d90, l_value=l_value_h)
+        f_h_180 = get_f_value(glass_type='Type7', season='Heating', region=region, direction=d180, l_value=l_value_h)
+        f_h_270 = get_f_value(glass_type='Type7', season='Heating', region=region, direction=d270, l_value=l_value_h)
+
+        m_h = a_evp_roof * upper_u * 0.034 * get_nu_h(region=region, direction='top')\
+            + a_evp_window[0] * window_eta * f_h_0 * get_nu_h(region=region, direction=d0)\
+            + a_evp_window[1] * window_attached_eta * f_h_90 * get_nu_h(region=region, direction=d90)\
+            + a_evp_window[2] * window_eta * f_h_180 * get_nu_h(region=region, direction=d180)\
+            + a_evp_window[3] * window_eta * f_h_270 * get_nu_h(region=region, direction=d270)\
+            + a_evp_door[0] * window_u * 0.034 * get_nu_h(region=region, direction=d0)\
+            + a_evp_door[1] * window_u * 0.034 * get_nu_h(region=region, direction=d90)\
+            + a_evp_door[2] * window_u * 0.034 * get_nu_h(region=region, direction=d180)\
+            + a_evp_door[3] * window_u * 0.034 * get_nu_h(region=region, direction=d270) \
+            + a_evp_wall[0] * wall_u * 0.034 * get_nu_h(region=region, direction=d0)\
+            + a_evp_wall[1] * wall_u * 0.034 * get_nu_h(region=region, direction=d90)\
+            + a_evp_wall[2] * wall_u * 0.034 * get_nu_h(region=region, direction=d180)\
+            + a_evp_wall[3] * wall_u * 0.034 * get_nu_h(region=region, direction=d270)
+
+        eta_a_h = m_h / a_evp_total
+
+    else:
+
+        eta_a_h = None
+
+    return u_a, eta_a_h, eta_a_c
 
 
 if __name__ == '__main__':
@@ -176,7 +205,8 @@ if __name__ == '__main__':
         window_attached_u=0.1,
         window_eta=0.1,
         window_attached_eta=0.1,
-        l_value=1/0.3)
+        l_value_h=1/0.3,
+        l_value_c=1/0.3)
 
     print(u_a)
 

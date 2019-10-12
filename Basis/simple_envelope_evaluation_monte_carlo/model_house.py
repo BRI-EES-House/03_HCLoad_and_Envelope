@@ -665,14 +665,14 @@ def get_a_evp_ef_other(
 
 
 def calc_area(
-        house_type: str, a_f_total: float, r_open: float, story: int = None, aspect_ratio: float = None,
+        house_type: str, a_f_total: float, r_open: float, story: int = None, shape_factor: float = None,
         floor_ins_type: str = None, bath_ins_type: str = None, a_env_input: float = None) -> Dict:
     """
     Args:
         house_type: 住戸の種類 (= 'detached', 'attached')
         a_f_total: 床面積の合計, m2
         r_open: 開口部の面積比率
-        aspect_ratio: アスペクト比
+        shape_factor: 形状係数
         floor_ins_type: 床の断熱の種類 (= 'floor', 'base')
         bath_ins_type: 浴室の床の断熱の種類 (= 'floor', 'base', 'not_exist')
         a_env_input: 外皮面積の合計, m2
